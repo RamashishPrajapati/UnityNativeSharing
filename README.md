@@ -41,10 +41,7 @@ and create jar file of above project and add it to your unity project.
   For sharing on Facebook install facebook sdk and call "shareImage_on_Facebook_Sdk" method to share image with imagepath uri and hashtag/message.
   For sharing video on Facebook call method "shareVideo_on_Facebook_Sdk" and pass video uri and hastag/message
   
-  In Androidmanifest.xml file of Unity, add file-provide as mentioned below, 
-  in authorities attribute add package name of your app, if you are changing it.
-  
-  <provider
+    <provider
                android:name="android.support.v4.content.FileProvider"
                android:authorities="com.ram.unitynativesharing.UnitySSContentProvider"
                android:exported="false"
@@ -53,4 +50,9 @@ and create jar file of above project and add it to your unity project.
           android:name="android.support.FILE_PROVIDER_PATHS"
           android:resource="@xml/provider_paths" />
     </provider>
+    
+  In Androidmanifest.xml file of Unity, add file-provide as mentioned above, 
+  in authorities attribute add package name of your app, if you are changing it.
+  
+
  
